@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Welcome to cruziwords!</title>
+	<link rel="shortcut icon" href="favicon/favicon.ico" type=“image/x-icon”>
+	<link rel="icon" type=“image/x-icon” sizes="16x16 32x32 64x64" href="favicon/favicon.ico">
+	<link rel="icon" type="image/png" sizes="196x196" href="favicon/favicon-192.png">
+	<link rel="icon" type="image/png" sizes="160x160" href="favicon/favicon-160.png">
+	<link rel="icon" type="image/png" sizes="96x96" href="favicon/favicon-96.png">
+	<link rel="icon" type="image/png" sizes="64x64" href="favicon/favicon-64.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16.png">
+	<link rel="apple-touch-icon" href="favicon/favicon-57.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="favicon/favicon-114.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="favicon/favicon-72.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="favicon/favicon-144.png">
+	<link rel="apple-touch-icon" sizes="60x60" href="favicon/favicon-60.png">
+	<link rel="apple-touch-icon" sizes="120x120" href="favicon/favicon-120.png">
+	<link rel="apple-touch-icon" sizes="76x76" href="favicon/favicon-76.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="favicon/favicon-152.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="favicon/favicon-180.png">
+	<meta name="msapplication-TileColor" content="#FFFFFF">
+	<meta name="msapplication-TileImage" content="favicon/favicon-144.png">
+	<meta name="msapplication-config" content="favicon/browserconfig.xml">
+    <style type="text/css">
+
+        body {
+
+            font-family: sans-serif;
+            font-size: 16px;
+
+        }
+
+        p {
+            text-align: left;
+        }
+
+        #csv {
+            background-color: grey;
+            color: rgb(255, 255, 255);
+            font-family: Monospace;
+            margin: 10px 0px 0px 10px;
+            height: 25%;
+            width: 50%;
+        }
+
+        bold {
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+<h1>Welcome to cruziwords generator!</h1>
+
+<form action="cruziwords" method="post" enctype="multipart/form-data">
+    <label>Chose your csv file
+        <input name="file" type="file" accept="text/csv">
+    </label>
+    <p> The format of the file being: <bold>Clue</bold> in the first column, and then one or more <bold>solutions</bold> in the
+        following columns.
+        <br>For example:
+        <div id = "csv">
+            <br>Capital of Spain,MADRID
+            <br>Historic capital of Spain,TOLEDO,CORDOBA
+        </div>
+    </p>
+    <input name="submit" type="submit"/>
+</form>
+</body>
+</html>
